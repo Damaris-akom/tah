@@ -318,7 +318,7 @@ const mail="mailto:"+CONFIG.email;
 ["#wa1","#wa2","#fwa"].forEach(s=>$(s).href=wa);
 ["#em","#fem"].forEach(s=>$(s).href=mail);
 ["#li","#fli"].forEach(s=>$(s).href=CONFIG.linkedin);
-["#up","#fup"].forEach(s=>$(s).href="https://www.upwork.com/freelancers/~01b385c44d3922910e");
+$("#up").href="https://www.upwork.com/freelancers/~01b385c44d3922910e";
 document.querySelectorAll("[data-calendar]").forEach(a=>{
  if(CONFIG.calendar){a.href=CONFIG.calendar;if(a.closest(".cbox")){a.target="_blank";a.rel="noopener noreferrer"}else{a.target="_blank";a.rel="noopener noreferrer"}}
  else{a.href=mail+"?subject="+encodeURIComponent("Request for a conversation");a.removeAttribute("target")}
